@@ -8,10 +8,15 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <%# icons %>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
 
   <body>
-    <%= render 'navbar/shared' %>
+    <%= render 'shared/navbar' %>
+
+    
     <%= yield %>
   </body>
 </html>
